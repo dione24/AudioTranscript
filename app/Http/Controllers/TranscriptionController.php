@@ -29,7 +29,7 @@ class TranscriptionController extends Controller
             $file = $request->input('audio_link');
         }
         $model = 'whisper-1';
-        $token = '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';
+        $token = env('OPEN_API');
 
         $curl = curl_init();
 
